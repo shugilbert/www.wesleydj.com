@@ -1,1 +1,116 @@
-website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WesleyDJ - Your Event, Your Music</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ff6347;
+            color: white;
+        }
+        section {
+            padding: 20px;
+        }
+        .booking {
+            background-color: #ffeb3b;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WesleyDJ - Your Event, Your Music</h1>
+        <p>Specializing in Birthday Parties, Weddings, and Graduation Celebrations</p>
+    </header>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <h3>Birthday Parties</h3>
+        <p>Make your birthday memorable with our top-notch DJ services and sparkling celebrations.</p>
+
+        <h3>Weddings</h3>
+        <p>Your special day deserves the perfect soundtrack. Let us bring the music and the sparkles to your wedding.</p>
+
+        <h3>Graduation Celebrations</h3>
+        <p>Celebrate your achievements with a bang! Our DJs will keep the party going all night long.</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <img src="https://via.placeholder.com/400x300.png?text=Sparklers+at+Event" alt="Sparklers at Event">
+        <img src="https://via.placeholder.com/400x300.png?text=DJ+in+Action" alt="DJ in Action">
+        <img src="https://via.placeholder.com/400x300.png?text=Event+Crowd" alt="Event Crowd">
+    </section>
+
+    <section id="booking" class="booking">
+        <h2>Book Your Event</h2>
+        <form action="/submit-booking" method="post">
+            <label for="date">Choose a Date:</label>
+            <input type="date" id="date" name="event_date" required><br><br>
+            <label for="time">Choose a Time:</label>
+            <input type="time" id="time" name="event_time" required><br><br>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="client_name" required><br><br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="client_email" required><br><br>
+            <input type="submit" value="Book Now">
+        </form>
+    </section>
+
+    <footer id="contact">
+        <p>Contact us: info@wesleydj.com | +123 456 7890</p>
+        <p>&copy; 2024 WesleyDJ. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
